@@ -23,6 +23,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
+  CardDescription,
 } from "@/components/ui/card";
 import {
   Conversation,
@@ -493,8 +494,11 @@ export function PictureInPicture() {
       <Card className="w-full mx-auto shadow-none">
         <CardHeader>
           <CardTitle>
-            Select Transcript {isLoadingData && "(Loading...)"}
+            Select Demo Transcript {isLoadingData && "(Loading...)"}
           </CardTitle>
+          <CardDescription>
+            Simulate Zoom Realtime API with transcripts cut before NBG.
+          </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-6">
           <Select
