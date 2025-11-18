@@ -27,10 +27,10 @@ export async function POST(req: Request) {
     console.log('Generating AI response for messages:', messages.length, 'messages');
 
     const result = streamText({
-      model: openai('gpt-5-nano-2025-08-07'),
+      model: openai('gpt-5.1-2025-11-13'),
       providerOptions: {
         openai: {
-          reasoningEffort: 'minimal',
+          reasoningEffort: 'low',
         },
       },
       messages: convertToModelMessages(messages),
