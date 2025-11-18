@@ -346,7 +346,7 @@ export function PictureInPicture() {
       {/* Smart prompt buttons - fixed at bottom */}
       <div className="p-4">
         <div className="flex flex-row justify-between items-end gap-4">
-          <div className="flex flex-wrap gap-2 border bg-background rounded-full p-2 w-full shadow">
+          <div className="flex flex-wrap gap-2 border bg-background rounded-lg p-2 w-full shadow">
             {prompts.map((prompt) => {
               const buttonState = getPromptButtonState(prompt);
 
